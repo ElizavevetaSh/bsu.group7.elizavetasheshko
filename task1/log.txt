@@ -1,0 +1,11 @@
+commit abd51bef23075c4907b1ccfb0a01ff2e14b9c127 (HEAD -> master)
+Author: Elizaveta Sheshko <liza021199@gmail.com>
+Date:   Tue Feb 19 19:35:35 2019 +0300
+
+    add status
+
+commit 064d5074d10525b733b2cdd00360ff3a79d49206
+Author: Elizaveta Sheshko <liza021199@gmail.com>
+Date:   Tue Feb 19 19:27:22 2019 +0300
+
+    add .gitignore
