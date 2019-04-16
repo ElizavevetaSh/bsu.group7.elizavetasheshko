@@ -4,6 +4,7 @@ class PostList {
         var _posts = posts;
         this.setPosts = function (postsToSet) { _posts = postsToSet; };
         this.getPosts = () => _posts;
+
     }
 
     getPage( skip = 0, top = 10, filterConfig ) {
@@ -117,18 +118,14 @@ class PostList {
         return false;
     }
 
-    remove (id) {
-        if (typeof id !== 'string' || id === '') {
-            return false;
+    remove(id) {
+        if (typeof id !== 'string' || id === '') { return false; }
+        const post = this.get(id);
+        if (post !== undefined) {
+            const i = this.getPosts().indexOf(post);
+            this.getPosts().splice(i, 1);
+            return true;
         }
-        var posts = this;
-        for (var i = 0; i < posts.length; ++i) {
-            if (posts[i].id === id) {
-                posts.splice(i, 1);
-                return true;
-            }
-        }
-
         return false;
     }
 
@@ -333,8 +330,8 @@ const photoPosts = [
     console.log('trying to edit with invalid args: ', model.edit('', 1));
     console.log('\n');
     console.log('remove');
-    console.log('remove post with id=\'5\': ', model.remove('5'));
     console.log('get post with id=\'5\':',model.get('5'));
+    console.log('remove post with id=\'5\': ', model.remove('5'));
     console.log('all posts after removing post:', model.getPosts());
 
 
