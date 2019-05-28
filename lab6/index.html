@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+		<meta charset="utf-8">
+		<title>WorldOfDance</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+    <body>
+
+
+	    <header>  
+            <div class="title"><a href="index.html">WorldOfDance</a></div>
+			<div class="menu">
+				<a id="username"></a>
+				<button id="add_button" style="display: none;">add post</button>
+				<button id="login_button">log in</button>
+				<button id="logout_button" style="display: none;">log out</button>
+			</div>
+		</header>
+
+
+        <div class="filters">
+            <div class="filter">
+                <div class="filter_description">Username</div>
+				<input type="text" name="user">
+            </div>
+            <div class="filter">
+                <div class="filter_description">Date</div>
+                <input type="date" name="date_interval_start">
+                <div class="filter_description" style="text-align: center;">through</div>
+                <input type="date" name="date_interval_end">
+            </div>
+            <div class="filter">
+                    <div class="filter_description">Tags</div>
+                    <input type="text" name="date_interval_start" placeholder="start each one with # symbol">
+            </div>
+            <div class="filter" style="justify-content: flex-end;"><button>Apply</button></div>
+        </div>
+
+
+		<div id="feed"> </div>
+		<script src="script.js"></script>
+		<script src="view.js"></script>
+        <script src="script2.js"></script>
+
+		<div class="load_more">
+            <div><button>load more posts</button></div>
+        </div>
+
+		<footer style="text-align: center; font-family: Georgia, serif; font: 1em;">
+            WorldOrDance - Шешко Елизавета , 2 курс 7 группа <br>
+            Дата последнего изменения: 19.03.2019
+		</footer>
+	</body>
+</html>
+    
