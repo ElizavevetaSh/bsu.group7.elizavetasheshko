@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+		<meta charset="utf-8">
+		<title>WorldOfDance</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+    <body>
+
+	    <header class="header">  
+            <div class="title"><a href="index.html">WorldOfDance</a></div>
+			<div class="menu">
+				<a id="username"></a>
+				<button OnClick="DisplayAddForm()" id="add_button" style="display: none;">add post</button>
+                <button OnClick="DisplayLogIn()" id="log_in_button" style="display: none;">log in</button>
+                <button OnClick="logOut()" id="log_out_button">log out</button>
+			</div> 
+		</header>
+
+        <div class="main">
+    		<div id="feed"> </div>
+	    	<script src="PostCollection.js"></script>
+    		<script src="view.js"></script>
+            <script src="Model.js"></script>
+            <script src="Feed.js"></script>
+            <script src="LogIn.js"></script>
+            <script src="AddPost.js"></script>
+            <script src="EditPost.js"></script>
+            <script src="init.js"></script>
+            <script src="main.js"></script>
+        </div>
+
+		<footer style="text-align: center; font-family: Georgia, serif; font: 1em;">
+			WorldOrDance - Шешко Елизавета , 2 курс 7 группа <br>
+			Дата последнего изменения: 28.05.2019
+		</footer>
+	</body>
+</html>
+    

@@ -1,0 +1,326 @@
+button{
+	height: 1.5rem;
+	border: solid 1px rgb(36, 36, 36);
+	margin: 3px;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 5px;
+	padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+	color: rgb(36, 36, 36);
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+
+input{
+	height: 1.5rem;
+	border: solid 1px rgb(36, 36, 36);
+	margin: 3px;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 5px;
+	padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+	font-family: Georgia, serif;
+	font-size: 0.9rem;
+}
+
+header{
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	float: left;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: rgba(237,180,255, 0.80);
+	height: 3.5em;
+}
+
+header .title{
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	font-size: 2.5em;
+	position: absolute;
+	width: 100%;
+	text-align: left;
+	z-index: 1;
+}
+
+header .title a{
+	text-decoration: none;
+	color: rgb(0, 0, 0)
+}
+
+@media screen and (min-width: 700px){
+	header .title{
+		text-align: left;
+		margin-left: 1.5em;
+
+	}
+}
+
+@media screen and (min-width: 380px) and (max-width: 700px){
+	header .title{
+		text-align: left;
+		margin-left: 0.5em;
+	}
+}
+
+@media screen and (max-width: 380px){
+	header .title{
+		display: none;
+	}
+}
+
+header .menu{
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
+	margin: 0.5em;
+	font-size: 1.5em;
+	text-align: right;
+	z-index: 2;
+}
+
+@media screen and (min-width: 520px){
+.filters{
+	padding-top: 40pt;
+	margin: auto;
+	margin-left: 13%;
+	margin-bottom: -30pt;
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+}
+
+.filter_description{
+	width: 70px;
+	font-family: 'Cabin', sans-serif;
+	color: rgb(54, 54, 54);
+	font-size: 0.8em;
+}
+
+.filter{
+	margin: 2pt;
+	width: 495px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+}
+
+@media screen and (max-width: 520px){
+	.filters{
+		padding-top: 40pt;
+		margin: auto;
+		margin-bottom: -30pt;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.filter_description{
+		font-family: 'Cabin', sans-serif;
+		color: rgb(54, 54, 54);
+		font-size: 0.8em;
+	}
+	
+	.filter{
+		margin: 10pt;
+		width: 495px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	}
+	
+
+
+.post{
+	display: flex;
+	margin: auto;
+	margin-top: 60pt;
+}
+
+@media screen and (min-width: 820px){
+	.post{
+		flex-direction: row;
+		width: 800px;
+	}
+}
+@media screen and (max-width: 820px) and (min-width: 500px){
+	.post{
+		flex-direction: column;
+		align-items: center;
+	}
+	.post_data{
+		width: 500px;
+	}
+}
+@media screen and (max-width: 500px){
+	body{
+		margin: 0pt;
+	}
+	.post{
+		flex-direction: column;
+		align-items: center;
+	}
+	.post_data{
+		width: 100%;
+	}
+	.post_img img{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.post_img img{
+    width: 500px;
+	height: 500px;
+	margin: 0pt;
+	object-fit: contain;
+}
+
+.post_data{
+	flex-direction: column;
+}
+
+.post_auth{
+	margin-left: 20px;
+	color: rgb(27, 0, 80);
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.post_date{
+	margin-left: 20px;
+	margin-top: 10px;
+	color: rgb(54, 54, 54);
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.post_description{
+	margin-left: 20px;
+	margin-top: 30px;
+	color: rgb(27, 0, 80);
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1em;
+}
+
+.tags{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: rgb(36, 36, 36);
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.tag::before{
+	padding-right: 5pt;
+	padding-left: 5pt;
+	content: "#";
+}
+
+.post_menu{
+	margin-top: 30px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;  
+	align-items: center;
+}
+
+.likes{
+	margin-right: 30pt; 
+	color: rgb(36, 36, 36);
+	font-family: 'Cabin', sans-serif;
+	font-weight: 800;
+	font-size: 1.7em;
+}
+
+#not_liked{
+	height: 20pt;
+	object-fit: contain;
+}
+
+#liked{
+	height: 20pt;
+	object-fit: contain;
+}
+
+#load_more{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		margin-top: 60pt;
+}
+
+footer {
+	margin-top: 60px; 
+	text-align: center;
+	font-family: Georgia, serif; 
+	font-style: italic;
+	color: rgb(36, 36, 36);
+	font-size: 0.9em;
+	background: rgba(237,180,255, 0.80);
+}
+
+.logIN{
+	width: 100%;
+	margin: 25% 0 25% 0;
+	height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+textarea{
+    resize: none;
+	height: 120px;
+	width: 100%;
+	max-width: 300px;
+	border: none;
+	font-family: Georgia, serif; 
+	font-size: 1rem;
+	font-style: inherit;
+}
+
+.DragDropInput{
+	width: 500px;
+	height: 500px;
+	margin: 0pt;
+	object-fit: contain;
+    padding: 0;
+	opacity: 0;
+}
+
+.DragDropText{
+	font-family: Georgia, serif; 
+	font-style: italic;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    position: relative;
+    color: black;
+}
+
+.background{
+    max-width: 500px;
+    width:100%;
+    border: none;
+}
+
+.error{
+	font-family: 'Cabin', sans-serif;
+	font-weight: 500;
+	font-size: 2.5em;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
